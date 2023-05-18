@@ -1,3 +1,4 @@
-.box{width:500px; margin:300px auto; display: flex; align-items: center;}
+h2{text-align: center; margin:200px auto;}
+.box{width:500px; margin:100px auto; display: flex; align-items: center;}
 .box input{flex:1;}
 .box button{margin-left:20px;}
