@@ -1,10 +1,3 @@
-import axios from 'axios';
-
-//단어 입력
-function addWord(){
-    fetchData();
-}
-
 
 const fetchData = async () => {
     try {
@@ -27,5 +20,7 @@ const fetchData = async () => {
       // 오류 처리
       console.error(error);
     }
-  };
-  
+};
+function addWord(){
+    fetchData();
+}
