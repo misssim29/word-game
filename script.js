@@ -8,6 +8,7 @@ function addWord(){
         params: {
             key : "CA34B42695DBE19DDC617C4277B77376",
             q :"나무",
+            req_type : "json",
             sort : "dict"
         },
         })
