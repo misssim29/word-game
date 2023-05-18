@@ -4,12 +4,11 @@
 function addWord(){
     axios({
         method: 'get',
-        url:'https://kauth.kakao.com/oauth/token',
+        url:'https://krdict.korean.go.kr/api/search',
         params: {
-            "grant_type" : "authorization_code",
-            "client_id" : "29e1cf04bde0d471d7acce5246a16d28",
-            "redirect_url" : SITEURL+"index.html",
-            "code" : kakaoCode
+            key : "E1269047A2AD9D16BB5CBEF9BA664EC9",
+            q :"나무",
+            sort : "dict"
         },
         })
         .then(function (res) {
