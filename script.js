@@ -6,7 +6,7 @@ function addWord(){
         method: 'get',
         url:'https://opendict.korean.go.kr/api/search',
         params: {
-            key : "7C2ADF260104EE196F0AF53D1BCE90ED",
+            key : "CA34B42695DBE19DDC617C4277B77376",
             q :"나무",
             sort : "dict"
         },
