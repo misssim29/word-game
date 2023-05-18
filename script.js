@@ -4,9 +4,9 @@
 function addWord(){
     axios({
         method: 'get',
-        url:'https://krdict.korean.go.kr/api/search',
+        url:'https://opendict.korean.go.kr/api/search',
         params: {
-            key : "E1269047A2AD9D16BB5CBEF9BA664EC9",
+            key : "7C2ADF260104EE196F0AF53D1BCE90ED",
             q :"나무",
             sort : "dict"
         },
