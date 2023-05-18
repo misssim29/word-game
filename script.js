@@ -11,6 +11,10 @@ function addWord(){
             req_type : "json",
             sort : "dict"
         },
+        withCredentials : true,
+        headers:{
+            'Access-Control-Allow-Origin': 'https://misssim29.github.io'
+        }
         })
         .then(function (res) {
             console.log(red);
