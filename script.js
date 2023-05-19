@@ -23,7 +23,7 @@ function wordCheck(InputTxt){
         }
         axios({
             method: 'get',
-            url:'https://cors-anywhere.herokuapp.com/https://stdict.korean.go.kr/api/search.do',
+            url:'https://proxy.cors.sh/https://stdict.korean.go.kr/api/search.do',
             params: {
                 key : "9311B28987B0F92D920BE18F75AD1D2D",
                 q :InputTxt,
@@ -61,7 +61,7 @@ function createWord(InputTxt){
     const result = document.getElementById('TxtResult');
     axios({
         method: 'get',
-        url:'https://cors-anywhere.herokuapp.com/https://stdict.korean.go.kr/api/search.do',
+        url:'https://proxy.cors.sh/https://stdict.korean.go.kr/api/search.do',
         params: {
             key : "9311B28987B0F92D920BE18F75AD1D2D",
             q :InputTxtLast,
