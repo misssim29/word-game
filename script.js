@@ -9,6 +9,11 @@ function addWord(){
 
 // 단어체크
 function wordCheck(InputTxt){
+    const regExp = /[ㄱ-ㅎㅏ-ㅣ가-힣]/g; 
+    if(!regExp.test(InputTxt)){
+        alert("한글로 입력해주세요.");
+        return false;
+    }
     if(lastWord != '' && lastWord != InputTxt.slice(0,1)){
         alert("시작단어를 다시 확인해주세요.");
     } else{
@@ -106,4 +111,12 @@ function createWord(InputTxt){
             console.log(error);
     });
 }
+function addEnter(event){
+    if(event.key === 'Enter'){
+        addWord();
+    }
+}
 
+function retry(){
+    location.reload();
+}

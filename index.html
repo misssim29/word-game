@@ -12,9 +12,10 @@
 <body>
     <h2 id="TxtResult"></h2>
     <div class="box">
-        <input type="text" class="txt_word" id="TxtWord">
+        <input type="text" class="txt_word" id="TxtWord" onkeydown="addEnter(event)">
         <button type="button" onclick="addWord()">입력!</button>
     </div>
     <p>2-5글자 내로 입력하세요.</p>
+    <button class="retry" onclick="retry()">다시하기</button>
 </body>
 </html>
